@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "render-crash-fix",
+  "version": "${version}",
+  "name": "RenderCrashFix",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/RenderCrashFix/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.marin.rendercrashfix.client.RenderCrashFixClient"
+    ],
+    "main": [
+      "me.marin.rendercrashfix.RenderCrashFix"
+    ]
+  },
+  "mixins": [
+    "RenderCrashFix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
